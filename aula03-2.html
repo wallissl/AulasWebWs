@@ -30,14 +30,14 @@
             width: 68%;
             display: inline-block;
         }
-        ul{
+        nav ul{
             width:90%;
             display: inline-block;
             text-align: end;
             position: relative;
             top:15px;   
         }
-        li{
+        nav li{
             width:50px;
             display: inline;
             padding-right: 20px;
@@ -69,7 +69,7 @@
             left:60px;
             bottom: 80px;
         }
-        img{
+        figure img{
             width:450px;
         }
 
@@ -110,7 +110,7 @@
             height: 250px;
             border: solid 1px;
             margin-top:10px;
-            display: inline-block;
+            display: flex;
             width: 100%;
         }
         .logoFo{
@@ -134,7 +134,7 @@
             border: solid 1px;
             margin-top:10px;
             margin-left:10px;
-            width:30%;
+            width:25%;
             display: inline-block;    
         }
         .logoFo2{
@@ -142,6 +142,13 @@
             border: solid 1px;
             margin: 10px 10px 10px 10px;
             background-color: aqua;
+            width: 90%;
+            display: inline-block;
+        }
+        .imgGato{
+            width:70%;
+            position: relative;
+            left:50px;
         }
         .listaFo2{
             height: 210px;
@@ -149,19 +156,43 @@
             margin: 10px 10px 10px 10px;
             background-color: rgb(134, 229, 102);
         }
+
+        .listaFo2 ul{
+            list-style-type: none;
+        }
+
+        .listaFo2 li{
+            margin-top: 10px;
+            font-size: 15px;
+            position: relative;
+            left:85px;
+            top:22px;
+        }
+
+        h5{
+            font-size: 18px;
+            text-align: center;
+            color:#fff;
+            margin-top: 10px;
+        }
+
         .contatoFo2{
             height: 120px;
             border: solid 1px;
             margin: 10px 10px 10px 10px;
             background-color: rgb(168, 71, 170);
+           
         }
         .contatoFo3{
             height: 60px;
             border: solid 1px;
             margin: 10px 10px 10px 10px;
             background-color: rgb(168, 71, 170);
+            
         }
-        
+        *{
+            margin: 0;
+        }
 
     </style>
 
@@ -219,16 +250,34 @@
     <footer>
 
         <div class="logoFo">
-            <div class="logoFo2"> </div>
+            <div class="logoFo2"> 
+                <img src="logoGato.png" class="imgGato">   
+               
+            </div>
         </div>
 
         <div class="listaFo">
-            <div class="listaFo2"></div>
+            <div class="listaFo2">
+                <h5>Conheça-nos</h5>
+                <ul>
+                    <li>Sobre o catWorld</li>
+                    <li>Raças</li>
+                    <li>Comunidade</li>
+                    <li>Nossa equipe</li>
+                </ul>
+            </div>
+
         </div>
 
         <div class="contatoFo">
-            <div class="contatoFo2"></div>
-            <div class="contatoFo3"></div>
+            <div class="contatoFo2">Conheça nossas redes sociais</div>
+            <div class="contatoFo3">
+                <img src="github.png>">
+                <img src="linkedin.png">
+                <img src="instagram.png">
+               
+                
+            </div>
         </div>
 
     </footer>
